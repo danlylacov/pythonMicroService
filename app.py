@@ -5,7 +5,7 @@ from make_chart import MakeChart
 
 app = FastAPI()
 
-@app.get("/image/{id_account")
+@app.get("/image/{id_account}")
 async def get_image(id_account: int):
     getJSON = GetJSONAndMakeList(id_account)
     data_list = getJSON.JSON_to_dict()
